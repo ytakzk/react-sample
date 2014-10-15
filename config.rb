@@ -1,0 +1,5 @@
+http_path = "http://localhost:8000"
+css_dir = "app/css"
+sass_dir = "app/scss"
+images_dir = "app/images"
+javascripts_dir = "app/scripts"

@@ -1,0 +1,225 @@
+/* line 17, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 9, ../scss/index.scss */
+body {
+  font-size: 14px;
+}
+
+/* line 13, ../scss/index.scss */
+a {
+  text-decoration: none;
+  color: #888888;
+  -webkit-transition: opacity 0.15s linear;
+  -webkit-transition-delay: 0;
+  -moz-transition: opacity 0.15s linear 0;
+  -o-transition: opacity 0.15s linear 0;
+  transition: opacity 0.15s linear 0;
+  opacity: 1.0;
+}
+
+/* line 20, ../scss/index.scss */
+a:hover {
+  -webkit-transition: opacity 0.15s linear;
+  -webkit-transition-delay: 0;
+  -moz-transition: opacity 0.15s linear 0;
+  -o-transition: opacity 0.15s linear 0;
+  transition: opacity 0.15s linear 0;
+  opacity: 0.6;
+}
+
+/* line 25, ../scss/index.scss */
+.title {
+  color: #333333;
+}
+
+/* line 29, ../scss/index.scss */
+.bold, header h1, header ul span {
+  font-weight: bold;
+}
+
+/* line 33, ../scss/index.scss */
+.container {
+  width: 100%;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-box;
+  display: box;
+}
+
+/* line 38, ../scss/index.scss */
+header {
+  vertical-align: top;
+  height: 25px;
+  width: 200px;
+  padding: 25px 25px 0;
+}
+/* line 45, ../scss/index.scss */
+header h1 {
+  display: inline-block;
+  font-size: 1.2em;
+  height: 25px;
+  line-height: 25px;
+}
+/* line 53, ../scss/index.scss */
+header ul {
+  width: 500px;
+  list-style: none;
+  padding-top: 10px;
+}
+/* line 59, ../scss/index.scss */
+header ul span {
+  padding: 20px 0 2px;
+  display: inline-block;
+}
+/* line 65, ../scss/index.scss */
+header ul li a {
+  line-height: 20px;
+  padding: 5px 0;
+}
+
+/* line 71, ../scss/index.scss */
+.main {
+  -webkit-box-flex: 1;
+  -moz-box-flex: 1;
+  -ms-box-flex: 1;
+  box-flex: 1;
+}
+
+/* line 75, ../scss/index.scss */
+.about {
+  -webkit-box-flex: 1;
+  -moz-box-flex: 1;
+  -ms-box-flex: 1;
+  box-flex: 1;
+  padding: 25px;
+}
+/* line 80, ../scss/index.scss */
+.about h1, .about p {
+  line-height: 24px;
+}
+/* line 84, ../scss/index.scss */
+.about ul {
+  padding: 5px;
+}
+/* line 88, ../scss/index.scss */
+.about li {
+  line-height: 20px;
+}
+/* line 92, ../scss/index.scss */
+.about .partner, .about .client {
+  padding: 10px 0;
+}
+
+/* line 98, ../scss/index.scss */
+.list {
+  list-style: none;
+  display: inline-block;
+  margin: 25px;
+}
+/* line 103, ../scss/index.scss */
+.list .image {
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+}
+/* line 109, ../scss/index.scss */
+.list .list img {
+  -webkit-transition: opacity 0.15s linear;
+  -webkit-transition-delay: 0;
+  -moz-transition: opacity 0.15s linear 0;
+  -o-transition: opacity 0.15s linear 0;
+  transition: opacity 0.15s linear 0;
+  opacity: 1.0;
+}
+/* line 114, ../scss/index.scss */
+.list .list img:hover {
+  -webkit-transition: opacity 0.15s linear;
+  -webkit-transition-delay: 0;
+  -moz-transition: opacity 0.15s linear 0;
+  -o-transition: opacity 0.15s linear 0;
+  transition: opacity 0.15s linear 0;
+  opacity: 0.85;
+}
+/* line 119, ../scss/index.scss */
+.list .name {
+  display: inline-block;
+  width: 400px;
+  height: 80px;
+  margin-left: 10px;
+}
+/* line 126, ../scss/index.scss */
+.list .title {
+  display: table-cell;
+  width: 400px;
+  height: 80px;
+  vertical-align: middle;
+  text-align: left;
+}
+/* line 134, ../scss/index.scss */
+.list .name .title {
+  font-size: 90%;
+  color: #333;
+}

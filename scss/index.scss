@@ -1,0 +1,140 @@
+@charset "utf-8";
+@import "compass/reset";
+@import "compass";
+
+$textColor: #333;
+$linkColor: #888;
+
+
+body {
+  font-size: 14px;
+}
+
+a {
+  text-decoration: none;
+  color: $linkColor;
+  @include transition(opacity 0.15s linear 0);
+  opacity: 1.0;
+}
+
+a:hover {
+  @include transition(opacity 0.15s linear 0);
+  opacity: 0.6;
+}
+
+.title {
+  color: $textColor;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.container {
+  width: 100%;
+  @include display-box;
+}
+
+header {
+  vertical-align: top;
+  height: 25px;
+  width: 200px;
+  padding: 25px 25px 0;
+
+
+  h1 {
+    @extend .bold;
+    display: inline-block;
+    font-size: 1.2em;
+    height: 25px;
+    line-height: 25px;
+  }
+
+  ul {
+    width: 500px;
+    list-style: none;
+    padding-top: 10px;
+  }
+
+  ul span {
+    padding: 20px 0 2px;
+    display: inline-block;
+    @extend .bold;
+  }
+
+  ul li a {
+    line-height: 20px;
+    padding: 5px 0;
+  }
+}
+
+.main {
+  @include box-flex(1);
+}
+
+.about {
+  @include box-flex(1);
+
+  padding: 25px;
+  
+  h1, p {
+    line-height: 24px;
+  }
+
+  ul {
+    padding: 5px;
+  }
+
+  li {
+    line-height: 20px;
+  }
+
+  .partner, .client {
+    padding: 10px 0;
+  }
+}
+
+
+.list {
+  list-style: none;
+  display: inline-block;
+  margin: 25px;
+
+  .image {
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+  }
+
+  .list img {
+    @include transition(opacity 0.15s linear 0);
+    opacity: 1.0;
+  }
+
+  .list img:hover {
+    @include transition(opacity 0.15s linear 0);
+    opacity: 0.85;
+  }
+
+  .name {
+    display: inline-block;
+    width: 400px;
+    height: 80px;
+    margin-left: 10px;
+  }
+
+  .title {
+    display: table-cell;
+    width: 400px;
+    height: 80px;
+    vertical-align: middle;
+    text-align: left;
+  }
+
+  .name .title {
+    font-size: 90%;
+    color: #333;
+    // @extend .bold;
+  }
+
+}
