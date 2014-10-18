@@ -9,35 +9,22 @@ var Link = Router.Link;
 var HOST = 'https://qiita.com/api/v1';
 var http = {
   items: function() {
-    var defer = $.Deferred();
-    $.ajax({
+    return $.ajax({
       url: HOST+'/items',
-      dataType: 'json',
-      success: defer.resolve,
-      error: defer.reject
+      dataType: 'json'
     });
-    return defer.promise();
   },
   itemsIntag: function(tag) {
-    var defer = $.Deferred();
-    $.ajax({
+    return $.ajax({
       url: HOST+'/tags/'+tag+'/items',
-      dataType: 'json',
-      success: defer.resolve,
-      error: defer.reject
+      dataType: 'json'
     });
-    return defer.promise();
   },
   tags: function() {
-    var defer = $.Deferred();
-    $.ajax({
+    return $.ajax({
       url: HOST+'/tags',
-      dataType: 'json',
-      success: defer.resolve,
-      error: defer.reject
-    });
-    return defer.promise();    
-  }
+      dataType: 'json'
+    });  }
 };
 
 var Main = React.createClass({
